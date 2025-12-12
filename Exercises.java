@@ -150,3 +150,118 @@
 //     input.close();
 //     }
 // }
+
+
+// 6
+
+// import java.util.Scanner;
+
+// public class Exercises{
+//     public static void main(String[]args){
+
+//         Scanner input = new Scanner(System.in);
+
+//         int number = input.nextInt();
+
+//         if (number > 0){
+//             System.out.println("POSITIVE NUMBER ");
+//         }
+
+//         else{
+//             System.out.println("NEGATIVE NUMBER ");
+//         }
+
+//         input.close();
+//     }
+// }
+
+
+//7
+
+// import java.util.Scanner;
+
+// public class Exercises{
+//     public static void main(String[]args){
+
+//         Scanner input = new Scanner(System.in);
+
+//         int number = input.nextInt();
+
+//         if (number % 2 == 0){
+//             System.out.println("This number is even");
+//         }
+//         else{
+//             System.out.println("This number is odd");
+//         }
+
+//         input.close();
+//     }
+// }
+
+
+// 8
+
+// import java.util.Scanner;
+
+// public class Exercises{
+//     public static void main(String[]args){
+
+//         Scanner input = new Scanner(System.in);
+
+//         int number1 = input.nextInt();
+//         int number2 = input.nextInt();
+//         int biggnum, minnum;
+
+//         if (number1 > number2){
+//             biggnum = number1;
+//             minnum = number2;
+//         }
+//         else{
+//             biggnum = number2;
+//             minnum = number1;
+//         }
+
+//         if (biggnum % minnum == 0){
+//             System.out.println("Those numbers are multiples BIGGER: " + biggnum + " SMALLER: " + minnum);
+//         }
+//         else {
+//         System.out.println("Those numbers is not multiples BIGGER: " + biggnum + " SMALLER: " + minnum);
+//         }
+
+//         input.close();
+//     }
+// }
+
+
+// 9
+
+import java.util.Scanner;
+
+public class Exercises{
+    public static void main(String[]args){
+
+        Scanner input = new Scanner(System.in);
+
+        int firstH = input.nextInt();
+        int secondH = input.nextInt();
+        int s;
+
+        if (0 > firstH || firstH > 23 || 0 > secondH || secondH > 23){
+            System.out.println("Time not accept. ");
+        }
+        else if (secondH > firstH){
+            s = secondH - firstH ;
+            System.out.println(s);
+        }
+        else if (firstH > secondH){
+            s = (24 - firstH) + secondH;
+            System.out.println(s);
+        }
+        else {
+            s = 24;
+            System.out.println(s);
+        }     
+
+        input.close();
+    }
+}
